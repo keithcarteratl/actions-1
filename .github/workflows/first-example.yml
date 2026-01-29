@@ -15,6 +15,12 @@ jobs:
         - name: List Files
           run: ls
 
+        - name: Where am I?
+          run: |
+            pwd
+            ls -la
+            ls -la ..
+
         - name: Read the file
           run: cat README.md
 
