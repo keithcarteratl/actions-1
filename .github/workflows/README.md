@@ -1,2 +1,1 @@
-# Exploring Actions
-We will be learning GitHub Actions.
+# My first readme file in this repo.
