@@ -14,12 +14,12 @@ jobs:
 
         - name: List Files
           run: ls
-
-        - name: Where am I?
+        
+        - name: Find README anywhere
           run: |
-            pwd
-            ls -la
-            ls -la ..
+            find . -maxdepth 5 -iname "readme*"
+            echo "Top-level files:"
+            find . -maxdepth 2 -type f -print
 
         - name: Read the file
           run: cat README.md
